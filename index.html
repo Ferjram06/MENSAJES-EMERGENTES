@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Práctica 7 - Mensajes emergentes</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="contenedor">
+        <section class="tarjeta">
+            <div class="icono-principal">!</div>
+
+            <h1>Inicio de prueba</h1>
+
+            <p class="descripcion">
+                Marca la casilla para habilitar el botón y continuar.
+            </p>
+
+            <label class="casilla">
+                <input type="checkbox" id="inicioPrueba">
+                <span>Inicio de prueba</span>
+            </label>
+
+            <button id="botonAcepto" disabled>
+                Acepto
+            </button>
+        </section>
+    </main>
+
+    <!-- Ventana emergente -->
+    <div id="ventanaEmergente" class="fondo-modal" hidden>
+        <section
+            class="modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="tituloModal"
+        >
+            <div class="icono-alerta">!</div>
+
+            <h2 id="tituloModal">¡Ten cuidado!</h2>
+
+            <p class="mensaje">
+                Cuidado, no presiones tan fuerte
+            </p>
+
+            <img
+                class="imagen-prevencion"
+                src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&auto=format&fit=crop"
+                alt="Persona utilizando equipo de protección durante un trabajo"
+            >
+
+            <button id="botonAceptar">
+                Aceptar
+            </button>
+        </section>
+    </div>
+
+</body>
+</html>
